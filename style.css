@@ -1,0 +1,1057 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+:root
+{
+    --red : rgb(173,3,3);
+    --black : rgb(7, 7, 7);
+}
+.window
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    color: white;
+}
+
+.f1, .f1, .f3, .f4, .f5
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(7, 7, 7);
+    background-color: rgb(121, 31, 31)(--red);
+    color: white;
+    margin: 0px;
+}
+
+.header
+{   
+    position: static;
+    height: 2vh;
+    width: 100vw;;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s;
+}
+
+.p
+{
+    color: white;
+    font-size: 35px;
+    margin: 20px 760px 30px 30px;
+    text-decoration: none;
+    color: var(--red);
+    font-weight: bold;
+    animation: slideRight .4s ease-in;
+}
+
+ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    text-decoration: none;
+}
+
+ul li 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul .q
+{
+    margin: 20px 30px 0px 0px;
+    list-style: none;
+    height: 30px;
+    width: 70px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    animation: slideTop .2s ease-in;
+    animation-delay: calc(.1s * var(--i));
+}
+
+ul li:hover
+{
+    color: var(--red);
+}
+
+.intro 
+{
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 7%;
+}
+
+.intro .me
+{
+    margin: 120px 0px 0px 0px;
+}
+
+.intro .hello
+{
+    font-size: 30px;
+    opacity: 1;
+    animation: slideRight .5s ease-in forwards;
+    animation-delay: .2s;
+}
+
+.intro .me .name
+{
+    font-size: 70px;
+    margin: 0px 0px;
+    animation: slideTop .5s ease-in forwards;
+    animation-delay: .3s;
+
+}    
+
+.intro .me .detail
+{
+    margin: 10px 0px 0px 0px;
+    font-size: 18px;
+    animation: slideLeft .5s ease-in forwards;
+    animation-delay: .4s;
+
+}
+
+.intro .hello .text
+{
+    color: var(--red);
+}
+
+.intro .photo img
+{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin: 50px 0px 0px 0px;
+    box-shadow: 0px 0px 55px 15px var(--red) ; 
+    /* border: 6px solid var(--red); */
+}
+
+.bx
+{
+   height: 100px;
+   width: 50px;
+   color: var(--red);
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 50px 0px 0px 0px;
+}
+
+.logo a
+{
+  margin-right: 13px;  
+}
+
+.logo a .icon
+{
+    padding: 10px 0px 0px 10px;
+    height: 25px;
+    width: 25px;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+    color: var(--red);
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+.logo a .icon:hover
+{
+   color: black;
+   background-color: var(--red);
+   transition: .2s;
+   box-shadow: 0px 0px 30px 5px var(--red);
+}
+
+.bt
+{
+    height: 40px;
+    width: 170px;
+    background-color: var(--red);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin: 40px 0px 0px 0px;
+    animation: slideTop .5s ease forwards;
+    /* box-shadow: 0px 0px 30px 5px var(--red); */
+    animation-delay: .9s;
+}
+
+a .bt
+{
+    margin: 30px 300px 0px 0px;
+}
+
+.bt:hover 
+{
+    color: var(--red);
+    background-color: black;
+    border: 3px solid var(--red);
+    cursor: pointer;
+    /* box-shadow: 0px 0px 30px 2px var(--red); */
+}
+
+@keyframes slideRight 
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }    
+    100%
+    {
+        transform: translateX(-0px);
+        opacity: 1;
+    }    
+}
+
+@keyframes slideTop 
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }    
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }        
+}
+
+@keyframes slideLeft
+{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }    
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }        
+}
+
+.f2 
+{
+    background-color: var(--black);
+    padding: 0px 0px 130px 0px;
+}
+
+.f2 .about
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(17, 3, 3);
+    margin: 0px 80px 0px 100px;
+}   
+
+.f2 .about img
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 35px 5px var(--red) ; 
+    margin: 190px 200px 0px 0px ;
+    background-color: rgb(17, 3, 3);
+}
+
+.f2 .ab
+{
+    font-size: 70px;
+    color: white;
+    padding: 100px 0px 30px 0px ;
+}
+
+.f2 .full
+{
+    font-size: 24px;
+    margin: 0px 0px 20px 0px;
+}
+
+.f2 h3 span
+{
+    font-size: 70px;
+    color: var(--red);
+    font-weight: bold;
+}
+
+.f2 .about .desc p
+{
+    font-size: 18px;
+    margin: 0px 0px 30px 0px;
+}
+
+.f3
+{
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.f3 .box
+{
+    margin: 0px 0px;
+}
+
+.f3 .box .list
+{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap; 
+    width: 90vw; 
+}   
+
+.f3 h1
+{
+    /* padding: 50px 0px 80px 650px; */
+    font-size: 50px;
+    color: white;
+}
+
+.f3  span
+{
+    color: var(--red);
+    border-bottom: 4px solid var(--red);
+
+}
+
+.f3 .box .list .l1, .l2, .l3, .l4, .l5, .l6
+{
+    height: 250px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 2px var(--red);
+    padding: 0px 20px;
+}
+
+.f3 .box .list .l1
+{
+    animation: slideTop .5s ease-in;
+    animation-delay: .2s;
+    margin: 30px 30px;
+    transition: transform 0.5s;
+
+}
+.f3 .box .list .l2
+{
+    animation: slideTop .5s ease-in;
+    animation-delay: .2s;
+    transition: transform 0.5s;
+
+}
+.f3 .box .list .l3
+{
+    animation: slideTop .5s ease-in;
+    animation-delay: .2s;
+    transition: transform 0.5s;
+
+}
+.f3 .box .list .l4
+{
+    animation: slideTop .5s ease-in;
+    animation-delay: .6s;
+    transition: transform 0.5s;
+
+}
+.f3 .box .list .l5
+{
+    animation: slideTop .5s ease-in;
+    animation-delay: .6s;
+    transition: transform 0.5s;
+
+}
+.f3 .box .list .l6
+{
+    animation: slideTop .5s ease-in;
+    animation-delay: .6s;
+    transition: transform 0.5s;
+}
+
+.f3 .box .l1:hover
+{
+    box-shadow: 0px 0px 25px 5px var(--red);
+    border: none;
+    transform: scale(1.1);
+
+}
+.f3 .box .l2:hover
+{
+    box-shadow: 0px 0px 25px 5px var(--red);
+    border: none;
+    transform: scale(1.1);
+
+
+}
+.f3 .box .l3:hover
+{
+    box-shadow: 0px 0px 25px 5px var(--red);
+    border: none;
+    transform: scale(1.1);
+
+
+}
+.f3 .box .l4:hover
+{
+    box-shadow: 0px 0px 25px 5px var(--red);
+    border: none;
+    transform: scale(1.1);
+
+}
+.f3 .box .l5:hover
+{
+    box-shadow: 0px 0px 25px 5px var(--red);
+    transform: scale(1.1);
+
+    border: none;
+}
+.f3 .box .l6:hover
+{
+    box-shadow: 0px 0px 25px 5px var(--red);
+    transform: scale(1.1);
+    border: none;
+}
+
+.f3 .box button
+{
+    height: 40px;
+    width: 170px;
+    background-color: var(--red);
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin: 5%  0px 0px 0px;
+    color: black;
+    text-decoration: none;
+    /* box-shadow: 0px 0px 30px 10px var(--red); */
+}
+
+.f3 .box button:hover 
+{
+    color: var(--red);
+    background-color: black;
+    border: 3px solid var(--red);
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 2px var(--red);
+}
+
+.f3 .box .list i
+{
+    margin: 20px 0px 20px 0px;
+}
+
+.f3 .box .list h2
+{
+    margin: 0px 0px 15px 0px;
+}
+
+.f3 .box .list .l1 
+{
+    margin: 0px 0px 10px 0px;
+}
+
+
+.skillflex
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+} 
+
+
+.container1
+{
+    width: 600px;
+    height: 500px;
+    margin: 28px 100px 0px 120px;
+}
+
+
+.heading1
+{
+    text-align: center;
+    text-decoration: underline;
+    margin: 0px 0px 30px 0px;
+}
+
+.heading2
+{
+    text-align: center;
+    text-decoration: underline ;
+    margin: 30px 250px 0px 0px;
+}
+
+.f4 h1
+{
+    text-align: center;
+    font-size: 70px;
+    margin: 0px 0px 60px 0px;
+}
+
+
+.f4 .skill  
+{
+    color: var(--red);
+}
+
+.f4 .techbar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-direction: column;
+    margin: 30px 0px 30px 100px;
+    height: 600px;
+    width: 50vw;
+    flex-wrap: wrap;
+} 
+
+.f4 .techbar .bar 
+{
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 80px 10px 0px;
+    font-size: 17px;
+}
+.techbar .up
+{
+    padding-top: 65px;
+    margin-bottom: 90px;
+}
+.f4 .techbar .bar i
+{ 
+    margin: 40px 0px 10px 0px;
+} 
+
+.techbar .bar .info span
+{
+    font-size: 17px ;
+    font-weight: 500;
+    margin: 10px 0px 10px 0px;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+@keyframes animate 
+{
+    from
+    {
+        transform: scaleX(0);
+    }
+
+    to
+    {
+        transform: scaleX(1);
+    }    
+}
+
+.techbar .bar .line
+{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    transform: scaleX(0);
+    animation: animate 1s forwards;
+    transform-origin:left;
+} 
+
+.techbar .bar .line span
+{
+    height: 100%;
+    color: var(--red);
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--red);
+    transform-origin:left ; 
+    animation: animate 1s 1s forwards;
+    transform: scaleX(0);
+}
+
+.techbar .bar .line span::after
+{
+    position: absolute;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.techbar .bar .html span
+{
+    content: "90%";
+}
+.techbar .bar .css span
+{
+    content: "90%";
+}
+.techbar .bar .js span
+{
+    content: "90%";
+}
+.techbar .bar .ajs span
+{
+    content: "90%";
+}
+.techbar .bar .php span
+{
+    content: "90%";
+}
+.techbar .bar .java span
+{
+    content: "90%";
+}
+.techbar .bar .c span
+{
+    content: "90%";
+}
+.techbar .bar .sql span
+{
+    content: "90%";
+}
+
+.techbar .bar .line span::before
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: var(--red);
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+
+.techbar .bar .html span
+{
+    width: 90%;
+}
+
+.techbar .bar .css span
+{
+    width: 95%;
+}
+
+.techbar .bar .js span
+{
+    width: 85%;
+}
+
+.techbar .bar .ajs span
+{
+    width: 70%;
+}
+
+.techbar .bar .php span
+{
+    width: 75%;
+}
+.techbar .bar .java span
+{
+    width: 95%;
+}
+.techbar .bar .c span
+{
+    width: 90%;
+}
+.techbar .bar .sql span
+{
+    width: 70%;
+}
+.techbar .bar .react span
+{
+    width: 85%;
+}
+
+.container1
+{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 200px 0px 0px;
+    width: 400px;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.radial-bars
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+.radial-bar
+{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px 0px 0px;    
+    stroke: white;
+    stroke-width: 9;
+}
+
+.raidal-bar .radial-bar svg
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%) rotate(-90deg);
+}
+
+.raidal-bar .radial-bar .progress-bar
+{
+    stroke-width: 10;
+    stop-color: rgb(237, 237, 237);
+    /* fill: transparent; */
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+
+}
+
+@keyframes animate-bar 
+{
+    100%
+    {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path
+{
+    stroke-width: 10;
+    stroke: var(--red);
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1
+{
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-2
+{
+    animation: animate-path2 1s 1s linear forwards;
+}
+.path-3
+{
+    animation: animate-path3 1s 1s linear forwards;
+}
+.path-4
+{
+    animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 
+{
+    100%
+    {
+        stroke-dashoffset: 50;
+    }    
+}
+@keyframes animate-path2
+{
+    100%
+    {
+        stroke-dashoffset: 100;
+    }    
+}
+@keyframes animate-path3
+{
+    100%
+    {
+        stroke-dashoffset: 80;
+    }    
+}
+@keyframes animate-path4
+{
+    100%
+    {
+        stroke-dashoffset: 120;
+    }    
+}
+
+.radial-bar .percentage
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text
+{
+    font-size: 18px;
+}
+
+.f1, .f1, .f3, .f4, .f5, .f6
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(17, 3, 3);;
+    color: white;
+}
+
+.f6 
+{
+    background-color: rgb(17, 3, 3);
+}
+.f5 
+{
+    background-color: rgb(17, 3, 3);
+}
+.f4
+{
+    background-color: rgb(17, 3, 3);
+}
+.f3
+{
+    background-color: rgb(17, 3, 3);
+}
+.f2
+{
+    background-color: rgb(17, 3, 3);
+}
+.f1
+{
+    background-color: rgb(17, 3, 3);
+}
+*
+{
+    background-color: rgb(17, 3, 3);
+}
+
+
+
+.f3 .box .list .l1
+{
+    margin: 0px 30px 40px 40px;
+}
+.f3 .box .list .l2
+{
+    margin: 0px 30px 40px 40px;
+}
+.f3 .box .list .l3
+{
+    margin: 0px 0px 40px 40px;
+}
+.f3 .box .list .l4
+{
+    margin: 0px 30px 40px 40px;
+}
+.f3 .box .list .l5
+{
+    margin: 0px 30px 40px 40px;
+}
+.f3 .box .list .l6
+{
+    margin: 0px 0px 40px 40px;
+}
+
+.f3 .box
+{
+    width: 78vw;
+}
+
+.f5 h1
+{
+    margin: 50px 38vw;
+    font-size: 60px;
+}
+
+.f5 h1 span
+{
+    color: var(--red);
+}
+
+.projects
+{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0px 0px 30px;
+}
+
+.projects .project 
+{
+    height: 300px;
+    width: 400px;
+    margin: 0px 60px 0px 0px;
+    position: relative;
+    cursor: pointer;
+}
+.projects .project img
+{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+    margin-bottom: 30px;
+}
+
+.project:hover img
+{
+    transform: scale(1.1);
+}
+
+.f6 
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.f6 .b1
+{
+    width: 45vw;
+    height: 600px;
+    padding: 20px;
+}
+.f6 .b2
+{
+    width: 45vw;
+    height: 600px;
+
+}
+
+.f6 h1
+{
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+.f6 h1 span
+{
+    color: var(--red);
+}
+
+.f6 p
+{
+    margin: 60px 0px 30px 0px;
+    font-size: 18px;
+}
+.f6 .b1 i
+{
+    margin: 0px 10px 0px 0px;
+    color: var(--red);
+}
+
+.f6 .b1 .a
+{
+    display: block;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+}
+
+.f6 .b1 .icon
+{
+    margin: 40px 20px 0px 0px;
+    font-size: 20px;
+    height:30px;
+    width: 30px;
+    border: 3px solid var(--red);
+    border-radius: 50%;
+    color: var(--red);
+    top: 100px;
+    padding: 12px 0px 0px 11px;
+}
+
+.f6 .b1 .icon:hover
+{
+    color: black;
+    background-color: var(--red);
+    box-shadow: 0px 0px 30px 5px var(--red);
+}
+
+.f6 .b1 input
+{
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+    font-size: 14px;
+    border: none;
+    height: 50px;
+    width: 95%;
+    background-color: rgb(31, 31, 31);
+}
+
+.f6 .b1 .ta 
+{
+    height: 300px;
+}
+.bt 
+{
+    margin: 15px;
+}
+
+.logo2
+{
+    background-color: rgb(17, 3, 3);
+}
